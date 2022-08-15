@@ -13,16 +13,18 @@ class Battlefield:
 
     def display_welcome(self):
         print("What happens when you force a dinosaur to defend itself against a mindless killing machine? Find out today at THE KILLING FIELD. Two may enter, one will leave!")
-        
+        print("")
+        robo_fighter.select_weapon()
+
     def battle_phrase(self):
         robo_fighter.attack(dino_fighter) 
         dino_fighter.attack(robo_fighter)
         self.display_winner()
-
+        
     def display_winner(self):
-        if dino_fighter.health == 0:
+        if dino_fighter.health == 0 or dino_fighter.health <= 0:
             print(f"{robo_fighter.name} is victorious!")
-        elif robo_fighter.health == 0:
+        elif robo_fighter.health == 0 or robo_fighter.health <= 0:
             print(f"{dino_fighter.name} is victorious!")
         else:
             self.battle_phrase()    
