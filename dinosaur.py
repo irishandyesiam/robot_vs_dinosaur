@@ -8,6 +8,8 @@ class Dinosaur:
 
     def attack(self, robot):
         robot.health -= self.attack_power
+        print(f"{self.name} attacks {robot.name} with SUPER CHOMP!")
+        print(f"{robot.name} is damaged and now health is at {robot.health}.")
         
 
 

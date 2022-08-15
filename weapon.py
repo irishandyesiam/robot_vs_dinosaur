@@ -4,5 +4,3 @@ class Weapon:
         self.name = name
         self.attack_power = attack_power
         
-
-# print("you must choose, but choose wisely")
