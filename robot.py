@@ -13,5 +13,8 @@ class Robot:
         
 attack_weapon = Weapon("rocket punch", 5)
 
- 
+# ("Rocket Punch", 5)
+# ("Super Flower Blood Moon Attack", 6)
+# ("ATATATATATATATATATATATATATATATATATATATATATATATATATATATATATATATA", 17)
+
 # print("you will be assimulated")
